@@ -1,17 +1,32 @@
-# SETUP
-vytvoření venv ve složce .venv pokud neexistuje
+# Setup
+
+## Create virtual environment
+
+```bash
 python -m venv .venv
+```
 
-aktivování venv
+## Activate virtual environment
+
+```bash
 .\.venv\Scripts\activate
+```
 
-instalace pip-tools pro instalaci knihoven
+## Install pip-tools
+
+```bash
 python -m pip install --upgrade pip
 python -m pip install pip-tools
+```
 
-kompilace knihoven z requirementů
+## Compile dependencies
+
+```bash
 python -m piptools compile requirements.in
+```
 
-instalace zkompilovaných knihoven
+## Install compiled dependencies
+
+```bash
 python -m pip install -r requirements.txt
-
+```
