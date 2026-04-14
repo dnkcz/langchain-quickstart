@@ -5,6 +5,9 @@ from langchain_ollama import ChatOllama
 llm = ChatOllama(
     model="qwen3.5:9b",
     base_url="http://127.0.0.1:11434",
+    reasoning=True,
+    validate_model_on_init=True,
+    temperature= 0.2
 )
 
 agent = create_deep_agent(
