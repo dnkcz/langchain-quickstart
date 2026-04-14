@@ -50,6 +50,7 @@ httpx==0.28.1
     #   google-genai
     #   langgraph-sdk
     #   langsmith
+    #   ollama
 idna==3.11
     # via
     #   anyio
@@ -71,11 +72,14 @@ langchain-core==1.2.28
     #   langchain
     #   langchain-anthropic
     #   langchain-google-genai
+    #   langchain-ollama
     #   langgraph
     #   langgraph-checkpoint
     #   langgraph-prebuilt
 langchain-google-genai==4.2.1
     # via deepagents
+langchain-ollama==1.1.0
+    # via -r requirements.in
 langgraph==1.1.6
     # via langchain
 langgraph-checkpoint==4.0.1
@@ -90,6 +94,8 @@ langsmith==0.7.30
     # via
     #   deepagents
     #   langchain-core
+ollama==0.6.1
+    # via langchain-ollama
 orjson==3.11.8
     # via
     #   langgraph-sdk
@@ -116,6 +122,7 @@ pydantic==2.13.0
     #   langchain-google-genai
     #   langgraph
     #   langsmith
+    #   ollama
 pydantic-core==2.46.0
     # via pydantic
 pyyaml==6.0.3
