@@ -1,9 +1,14 @@
 from deepagents import create_deep_agent
+from langchain_ollama import ChatOllama
 
 
+llm = ChatOllama(
+    model="qwen3.5:9b",
+    base_url="http://127.0.0.1:11434",
+)
 
 agent = create_deep_agent(
-    model="qwen3:9b",
+    model=llm,
     system_prompt="You are a helpful assistant",
 )
 
