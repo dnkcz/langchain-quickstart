@@ -17,7 +17,7 @@ agent = create_deep_agent(
 
 result = agent.invoke({
     "messages": [
-        {"role": "user", "content": "How are you?"}
+        {"role": "user", "content": "How are you? What tools you have at your disposal?"}
     ]
 })
 
